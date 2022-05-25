@@ -43,15 +43,15 @@ function App() {
           alt="logo"
         />
         <p>
-          <input
-            type="text"
-            value={value}
-            onChange={(e) => setValue(e.target.value)}
-            style={{ display: "block" }}
-          />
           <p>
             Ahoj, <strong>{value}</strong>
           </p>
+          <input
+            type="text"
+            value={value}
+            onInput={(e) => setValue(e.target.value)}
+            style={{ display: "block" }}
+          />
         </p>
         <a
           style={styles.AppLink}
