@@ -35,9 +35,7 @@ function App() {
           className="App-logo"
           alt="logo"
         />
-        <p>
-          Edit <span>src/App.js</span> and save to reload.
-        </p>
+        <p>Ahoj Rudy!</p>
         <a
           style={styles.AppLink}
           className="App-link"
