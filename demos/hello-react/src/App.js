@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const styles = {
   App: {
     textAlign: "center",
@@ -26,6 +28,7 @@ const styles = {
 };
 
 function App() {
+  const [value, setValue] = useState("Rudy");
   return (
     <div style={styles.App} className="App">
       <link
@@ -40,7 +43,15 @@ function App() {
           alt="logo"
         />
         <p>
-          Ahoj <strong>Rudy</strong>!
+          <input
+            type="text"
+            value={value}
+            onChange={(e) => setValue(e.target.value)}
+            style={{ display: "block" }}
+          />
+          <p>
+            Ahoj, <strong>{value}</strong>
+          </p>
         </p>
         <a
           style={styles.AppLink}
