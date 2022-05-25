@@ -77,6 +77,9 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "ignorePatterns": [
+      "build/*"
     ]
   },
   "browserslist": {
