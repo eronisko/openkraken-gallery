@@ -28,6 +28,10 @@ const styles = {
 function App() {
   return (
     <div style={styles.App} className="App">
+      <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap&subset=cyrillic-ext"
+        rel="stylesheet"
+      />
       <div style={styles.AppHeader} className="App-header">
         <img
           src="https://img.alicdn.com/imgextra/i4/O1CN01aT5xVM1lbORGlfbfn_!!6000000004837-2-tps-492-437.png"
