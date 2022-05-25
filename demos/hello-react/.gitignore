@@ -9,8 +9,7 @@
 /coverage
 
 # production
-!/build/static/js/bundle.js
-/build
+# /build
 
 # misc
 .DS_Store
