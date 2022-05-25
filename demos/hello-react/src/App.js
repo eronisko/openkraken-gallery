@@ -39,7 +39,9 @@ function App() {
           className="App-logo"
           alt="logo"
         />
-        <p>Ahoj Rudy!</p>
+        <p>
+          Ahoj <strong>Rudy</strong>!
+        </p>
         <a
           style={styles.AppLink}
           className="App-link"
