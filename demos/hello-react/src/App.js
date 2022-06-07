@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const styles = {
   App: {
@@ -29,6 +29,14 @@ const styles = {
 
 function App() {
   const [value, setValue] = useState("Rudy");
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setValue(value + "a");
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, [value]);
+
   return (
     <div style={styles.App} className="App">
       <link
