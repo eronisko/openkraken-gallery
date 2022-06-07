@@ -30,7 +30,7 @@ export default ({banner, title, desc, bundle}) => {
             uri: banner,
           }} />
         <View className="info">
-          <View className="title">{title}</View>
+          <View className="title">{title}!</View>
           <View className="desc">{desc}</View>
         </View>
       </View>
