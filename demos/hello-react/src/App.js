@@ -29,6 +29,7 @@ const styles = {
 
 function App() {
   const [value, setValue] = useState("Rudy");
+  const [count, setCount] = useState(0);
 
   return (
     <div style={styles.App} className="App">
@@ -56,15 +57,10 @@ function App() {
           oninput={(e) => setValue("input")}
           onchange={(e) => setValue("change")}
         />
-        <a
-          style={styles.AppLink}
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React: https://reactjs.org
-        </a>
+        <div>
+          <p>You clicked {count} times</p>
+          <button onClick={() => setCount(count + 1)}>Click me</button>
+        </div>
       </div>
     </div>
   );
