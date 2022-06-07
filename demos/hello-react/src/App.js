@@ -43,7 +43,7 @@ function App() {
           className="App-logo"
           alt="logo"
         />
-        <span>1</span>
+        <span>2</span>
         <p>
           Ahoj, <strong>{value}</strong>
         </p>
