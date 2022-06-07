@@ -6,7 +6,7 @@ import './index.css';
 
 export default function Home() {
   return <>
-    <p className="title"><img className="icon" src="../../../../demos/gallery/icon/framework.png" /> Framework</p>
+    <p className="title"><img className="icon" src="../../../../demos/gallery/icon/framework.png" /> Framework!</p>
     <ScrollView
       style={{
         height: '290rpx',
