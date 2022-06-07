@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const styles = {
   App: {
@@ -43,18 +43,19 @@ function App() {
           className="App-logo"
           alt="logo"
         />
+        <span>1</span>
         <p>
-          <span>1</span>
-          <p>
-            Ahoj, <strong>{value}</strong>
-          </p>
-          <input
-            type="text"
-            value={value}
-            onInput={(e) => setValue(e.value)}
-            style={{ display: "block" }}
-          />
+          Ahoj, <strong>{value}</strong>
         </p>
+        <input
+          type="text"
+          value={value}
+          style={{ display: "block" }}
+          onChange={(e) => setValue("Change")}
+          onInput={(e) => setValue("Input")}
+          oninput={(e) => setValue("input")}
+          onchange={(e) => setValue("change")}
+        />
         <a
           style={styles.AppLink}
           className="App-link"
