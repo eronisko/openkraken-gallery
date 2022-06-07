@@ -30,13 +30,6 @@ const styles = {
 function App() {
   const [value, setValue] = useState("Rudy");
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setValue(value + "a");
-    }, 1000);
-    return () => clearTimeout(timer);
-  }, [value]);
-
   return (
     <div style={styles.App} className="App">
       <link
@@ -51,6 +44,7 @@ function App() {
           alt="logo"
         />
         <p>
+          <span>1</span>
           <p>
             Ahoj, <strong>{value}</strong>
           </p>
