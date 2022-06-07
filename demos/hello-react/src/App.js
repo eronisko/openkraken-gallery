@@ -57,7 +57,7 @@ function App() {
           <input
             type="text"
             value={value}
-            onInput={(e) => setValue(e.target.value)}
+            onInput={(e) => setValue(e.value)}
             style={{ display: "block" }}
           />
         </p>
