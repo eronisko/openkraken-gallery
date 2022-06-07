@@ -16,7 +16,7 @@ export default ({banner, title, desc, bundle}) => {
           uri: banner,
         }} />
       <View className="hover-info">
-        <View className="hover-title">{title}</View>
+        <View className="hover-title">{title}!!</View>
       </View>
     </View>
     );
